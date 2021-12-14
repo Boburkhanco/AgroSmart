@@ -5,16 +5,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.bg-color{
+    width: 100%;
+    height: 95px;
+    background-image: url("./../../images/bg-blurred.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: absolute;
+    filter: blur(10px);
 }
 .header {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #c3c3c3;
-    padding: 10px;
-
+    position: relative;
 }
 .header__logo{
     width: 249px;
@@ -36,7 +43,7 @@
 .search-part {
     display: flex;
     justify-content: space-between;
-    width: 678px;
+    width: 637px;
     height: 27px;
     margin: 16px 16px 16px 25px;
     display: none;
@@ -99,6 +106,7 @@
     background-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .languages {
     width: 50px;
@@ -111,6 +119,7 @@
     font-size: 15px;
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .header-contact__link {
     text-decoration: none;

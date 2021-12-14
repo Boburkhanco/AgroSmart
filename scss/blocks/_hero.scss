@@ -23,10 +23,19 @@
     font-size: 20px;
     line-height: 27px;
     white-space: nowrap;
+    border: 2px solid transparent;
     border-radius: 4px;
-    padding: 23px 48px 20px 72px;
+    padding: 20px 45px 20px 62px;
     background-color: #22AD77;
+    text-transform: uppercase;
 }
+.hero__link-elon:hover{
+    background-color: #ffffffe7;
+    color: #22AD77;
+    border-color: #07b14d;
+    transition: .4s;
+}
+
 .hero__link-youtube {
     text-decoration: none;
 }

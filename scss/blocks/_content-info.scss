@@ -1,0 +1,53 @@
+.main {
+}
+.container {
+    max-width: 1200px;
+    padding: 45px;
+}
+.main-title {
+    font-size: 60px;
+    line-height: 74px;
+    color: #0D515C;
+    max-width: 860px;
+}
+.sorting {
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgba(13, 81, 92, 0.25);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.categories {
+    width: 200px;
+    display: block;
+    font-size: 100px;
+}
+.regions {
+    width: 200px;
+    display: block;
+    font-size: 100px;
+}
+.district {
+    width: 200px;
+    display: block;
+    font-size: 100px;
+}
+.btn-izlash {
+    width: 210px;
+    height: 44px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: #22AD77;
+    color: white;
+    font-size: 22px;
+    line-height: 33px;
+}
+.btn-izlash:hover{
+    background-color: #ffffffe7;
+    color: #22AD77;
+    border-color: #22AD77;
+    transition: .4s;
+}

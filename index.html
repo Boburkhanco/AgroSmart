@@ -8,37 +8,42 @@
     <title>Agro Smart</title>
 </head>
 <body>
-    <div class="intro">
-        <!-- Header  -->
-        <header class="header">
-            <div class="hamburger-menu__toggler" id="menuToggler">
-                <img class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="15">
-                <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
-            </div>
-            <img src="./images/White green 1.svg" alt="" class="header__logo" >
-            <div class="search-part" id="searchPart">
-                <input type="text" class="search-space">
-                <button class="submit-btn" id="submitBtn">Submit</button>
-            </div>
-            <ul class="header-menu" id="headerMenu">
-                <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li>
-                <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li> -->
-                <li class="header-menu__item"><a href="#" class="header-menu__link">эълон Бериш</a></li>
-                <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li> -->
-            </ul>
 
-            <div class="search-btn" id="searchBtn"></div>
-            <select class="form-select languages" id="langSort" aria-label="Language Options">
-                <option selected>Uz</option>
-                <option value="">Криль</option>
-            </select>
-            <a href="+998332771666" class="header-contact__link">
-                    <span class="header-contact__btn">
-                        <p class="header-contact__num">+998 33 277 1666</p>
-                        <span class="call-img"></span>
-                </div>
-            </a>
-        </header>
+     <!-- Header  -->
+     <div class="bg-color"></div>
+    <header class="header">
+        <div class="hamburger-menu__toggler" id="menuToggler">
+            <img class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="15">
+            <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
+        </div>
+        <img src="./images/White green 1.svg" alt="" class="header__logo" >
+        <div class="search-part" id="searchPart">
+            <input type="text" class="search-space">
+            <button class="submit-btn" id="submitBtn">Submit</button>
+        </div>
+        <ul class="header-menu" id="headerMenu">
+            <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li>
+            <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li> -->
+            <li class="header-menu__item"><a href="#" class="header-menu__link">эълон Бериш</a></li>
+            <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li> -->
+        </ul>
+
+        <div class="search-btn" id="searchBtn"></div>
+        <select class="form-select languages" id="langSort" aria-label="Language Options">
+            <option selected>Uz</option>
+            <option value="">Криль</option>
+        </select>
+        <a href="tel: +998332771666" class="header-contact__link">
+                <span class="header-contact__btn">
+                    <p class="header-contact__num">+998 33 277 1666</p>
+                    <span class="call-img"></span>
+            </div>
+        </a>
+    </header>
+    <!-- end of header  -->
+
+    <!-- intro  -->
+    <div class="intro">
         <ul class="header-menu__hamburger" id="menuHamburger">
             <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li>
             <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li>
@@ -62,7 +67,11 @@
                 </span>
             </a>
         </section>
+        <!-- end of hero  -->
     </div>
+    <!-- end of intro  -->
+
+    <!-- marquee  -->
     <div class="marquee-element">
         <marquee behavior="scroll" direction="scroll" class="hero-marquee">
             <h3>ТОШКЕНТ</h3>
@@ -87,7 +96,94 @@
             <img src="./images/5a2946a7888b58 1.svg" alt="">
         </marquee>
     </div>
+    <!-- end of marquee  -->
 
+    <div class="main container">
+        <h2 class="main-title">Ўз махсулотингизни сотинг ва сотиб олинг.</h2>
+
+        <div class="sorting">
+            <select class="form-select categories" id="catSort" aria-label="Category Options">
+                <option selected>Категорияни танланг</option>
+                <option value=""> Маҳсулот ёки хизматларни танланг</option> 
+                 <option value="">Мевалар</option> 
+                 <option value="">Ситрус мевалар</option> 
+                 <option value="">Қуритилган мевалар</option>
+                 <option value="">Полиз экинлари</option>   
+                 <option value="">Сабзавот экинлари</option> 
+                 <option value="">Кўкатлар</option>
+                 <option value="">Зироворлар</option>                                                       
+                 <option value="">Бошоқли экинлар</option>
+                 <option value="">Дуккакли экинлар</option>
+                 <option value="">Интенсив боғлар</option> 
+                 <option value="">Узумчилик</option> 
+                 <option value="">Уруғлар</option>
+                 <option value="">Доривор ўсимликлар</option>
+                 <option value="">Мевали ва манзарали дарахт кўчатлари</option>
+                 <option value="">Уй хайвонлари</option>
+                 <option value="">Паррандачилик</option>                    
+                 <option value="">Чорвачилик</option>
+                 <option value="">Балиқчилик</option>
+                 <option value="">Асаларичилик</option>
+                 <option value="">Пиллачилик</option>
+                 <option value="">Қушлар</option>
+                 <option value="">Ветеринария воситалари ва хизматлари</option>  
+                 <option value="">Деҳқончилик учун ижара ер майдони</option> 
+                 <option value="">Чорвачилик учун ижара ер майдони</option> 
+                 <option value="">Газон ва гул кўчатлари</option>
+                 <option value="">Ланшафт ва декорация хизматлари</option>                    
+                 <option value="">Чорва учун ем-хашаклар</option>
+                 <option value="">Қишлоқ хўжалиги техника хизмати</option>
+                 <option value="">Томчилатиб суғориш воситалари ва хизматлари</option>
+                 <option value="">Иссиқхона воситалари ва хизматлари</option>
+                 <option value="">Ўсимликлар учун дори воситалари</option>                     
+                 <option value="">Халқаро логистика хизматлари</option> 
+                 <option value="">Ўзбекистон бўйлаб логистика хизматлари</option> 
+                 <option value="">Маҳсулотларни сақлаш омборлари</option>
+                 <option value="">Експорт ва импорт корхоналари</option> 
+                 <option value="">Агро туризим ташкилотлари</option>
+                 <option value="">Қишлоқ хўжалиги корхоналари</option>
+                 <option value="">Гидро-мелероция хизматлари</option> 
+                 <option value="">Сув хўжалиги корхоналари</option> 
+                 <option value="">Қурилиш учун тош, қум ва ёғоч</option> 
+            </select>
+            <select class="form-select regions" id="regSort" aria-label="Region Options">
+                <option selected>Вилоятни танланг</option>
+                <option value="">Тошкент шаҳри</option> 
+                <option value="">Андижон вилояти</option> 
+                <option value="">Бухоро вилояти</option> 
+                <option value="">Фарғона вилояти</option> 
+                <option value="">Жиззах вилояти</option> 
+                <option value="">Хоразм вилояти</option> 
+                <option value="">Наманган вилояти</option> 
+                <option value="">Навоий вилояти</option> 
+                <option value="">Қашқадарё вилояти</option> 
+                <option value="">Қорақолпоғистон Республикаси</option> 
+                <option value="">Самарқанд вилояти</option> 
+                <option value="">Сирдарё вилояти</option> 
+                <option value="">Сурхандарё вилояти</option> 
+                <option value="">Тошкент вилояти</option>
+            </select>
+            <select class="form-select district" id="disSort" aria-label="District Options">
+                <option selected>Туманни танланг</option>
+                <option value="">Андижон шаҳри</option> 
+                <option value="">Андижон тумани</option> 
+                <option value="">Асака тумани</option> 
+                <option value="">Балиқчи тумани</option> 
+                <option value="">Бўз тумани</option> 
+                <option value="">Булоқбоши тумани</option> 
+                <option value="">Избосган тумани</option> 
+                <option value="">Жалақудуқ тумани</option> 
+                <option value="">Хўжаобод тумани</option> 
+                <option value="">Қўрғонтепа тумани</option> 
+                <option value="">Марҳамат тумани</option> 
+                <option value="">Ўлтинкўл тумани</option> 
+                <option value="">Пахтаобод тумани</option> 
+                <option value="">Шаҳрихон тумани</option>                    
+                <option value="">Улуғнор тумани</option> 
+            </select>
+            <button class="btn-izlash">Излаш</button>
+        </div>
+    </div>
 
 
 
