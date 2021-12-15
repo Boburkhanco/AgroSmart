@@ -1,0 +1,13 @@
+.product-part{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-title{
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    max-width: 450px;
+    color: hsl(188, 75%, 21%);
+}

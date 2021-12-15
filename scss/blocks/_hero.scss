@@ -54,7 +54,7 @@
 .youtube-btn__img {
     width: 34px;
     height: 26px;
-    background-image: url("./../../images/youtube 1.svg");
+    background-image: url("./../images/youtube 1.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -74,20 +74,27 @@
     justify-content: center;
 }
 .hero-marquee{
+    height: 80px;
     border: 1px solid white;
-    display: flex;
+    display: flex !important;
     color: white;
+    align-items: center;
+    padding-bottom: 10px;
 
     & h3 {
         margin-left: 10px;
         margin-right: 10px;
+
+        & img {
+            margin-bottom: -10px;
+        }
     }
 }
 
 /* Tablet */
 @media only screen and (max-width: 800px) {
     .hero-title{
-        font-size: 20px;
+        font-size: 40px;
         line-height: 30px;
         margin-top: 300px;
     }
@@ -98,5 +105,28 @@
     }
     .hero__link-youtube{
         display: none;
+    }
+    .marquee-element{
+        height: 80px;
+    }
+    .hero-marquee{
+        font-size: 18px;
+        height: 50px;
+    }
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .hero-title{
+        font-size: 20px;
+    }
+
+    .marquee-element{
+        height: 60px;
+    }
+    .hero-marquee{
+        font-size: 15px;
+        height: 45px;
     }
 }

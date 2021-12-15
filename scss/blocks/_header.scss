@@ -1,15 +1,15 @@
 .intro{
     width: 100%;
     height: 720px;
-    background-image: url("./../../images/menu-background@2x.jpg") ;
+    background-image: url("./../images/menu-background.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.bg-color{
+.bg-blur{
     width: 100%;
     height: 95px;
-    background-image: url("./../../images/bg-blurred.png");
+    background-image: url("./../images/bg-blurred.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -100,7 +100,7 @@
     border: 1px solid transparent;
     border-radius: 50%;
     background-color: #22AD77;
-    background-image: url("./../../images/fi-rr-shopping-cart.svg");
+    background-image: url("./../images/fi-rr-shopping-cart.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 16px;
@@ -109,7 +109,7 @@
     cursor: pointer;
 }
 .languages {
-    width: 50px;
+    width: 63px;
     height:30px;
     background-color: transparent;
     border: 0;
@@ -195,6 +195,9 @@
         width: 14px;
         height: 14px;
         display: block;
-        background-image: url("./../../images/Vector.svg");
+        background-image: url("./../images/Vector.svg");
+    }
+    .bg-blur{
+        height: 56px;
     }
 }
