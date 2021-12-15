@@ -1,5 +1,5 @@
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 45px;
 }
 .main-title {
@@ -7,15 +7,17 @@
     line-height: 74px;
     color: #0D515C;
     max-width: 860px;
+    font-family: Ruberoid;
 }
 .sorting {
-    width: 100%;
+    width: 94%;
     border: 1px solid rgba(13, 81, 92, 0.25);;
     border-radius: 4px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 5px 15px 5px;
+    margin: 0 auto;
 }
 .tanlov {
     width: 20%;
@@ -23,6 +25,8 @@
     display: block;
     font-size: 16px;
     cursor: pointer;
+    color: #084A4F;
+    font-family: Ruberoid;
 }
 .btn-izlash {
     width: 25%;
