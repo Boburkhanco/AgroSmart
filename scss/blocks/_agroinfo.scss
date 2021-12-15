@@ -1,0 +1,128 @@
+.agroinfo {
+    width: 100%;
+    height: 600px;
+    background-color: #22AD77;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("./../images/oshqovoq(footer)@2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 500px;
+    position: absolute;
+}
+.agroinfo-imgg {
+    width: 100%;
+    height: 500px;
+    background-image: url("./../images/oshqovoq(footer)@2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.agroinfo-inner__bg{
+    display: flex;
+    height: 600px;
+    justify-content: flex-end;
+    margin-right: 150px;
+    align-items: center;
+}
+.agroinfo-inner {
+    position: relative;
+    width: 400px;
+    padding: 40px 20px 25px 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.agroinfo-inner__logo {
+    width: 220px;
+    height: 32px;
+}
+.agroinfo-inner__text {
+    color: #084A4F;
+    max-width: 380px;
+    font-size: 20px;
+    line-height: 38px;
+    font-family: Ruberoid4;
+}
+.agroinfo-inner__btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #22AD77;
+    background-image: url("./../images/VectorNext.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 15px;
+    align-self: flex-end;
+    margin-right: 40px;
+}
+.agroinfo-inner__btn:hover{
+    cursor: pointer;
+    background-color: #0bbb77;  
+}
+
+/* Tablet */
+@media only screen and (max-width: 700px) {
+    .agroinfo{
+        height: 400px;
+        background-size: auto 300px;
+    }
+    .agroinfo-inner__bg{
+        height: 600px;
+        justify-content: start;
+        margin-right: 0px;
+        align-items: flex-start;
+    }
+    .agroinfo-inner{
+        width: 450px;
+        margin: 0;
+        position: relative;
+        padding: 15px 8px 10px 8px;
+        transform: translate(30px, 400px);
+        float: left;
+    }
+    .agroinfo-inner__text{
+        font-size: 14px;
+        line-height: 30px;
+        max-width: 500px;
+    }
+    .agroinfo-inner__btn{
+        margin-right: 5px;
+    }
+    .agroinfo-inner__logo {
+        width: 140px;
+        height: 24px;
+    }
+    .agroinfo-inner__btn{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 450px) {
+    .agroinfo{
+        height: 300px;
+        background-size: auto 240px;
+    }
+    .agroinfo-inner__bg{
+        height: 510px;
+    }
+    .agroinfo-inner__text{
+        font-size: 14px;
+        line-height: 30px;
+        max-width: 330px;
+    }
+    .agroinfo-inner{
+        width: 300px;
+        margin: 0;
+        position: relative;
+        padding: 15px 8px 10px 8px;
+        transform: translate(30px, 300px);
+        float: left;
+    }
+}
