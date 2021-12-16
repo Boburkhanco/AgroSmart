@@ -33,7 +33,6 @@
     flex-direction: column;
     margin: 20px 25px;
     font-family: Ruberoid;
-
 }
 .products-item__img {
     height: 200px;
@@ -76,6 +75,9 @@
     align-self: flex-end;
     transition: .3s;
     cursor: pointer;
+}
+.products-item__link{
+    text-decoration: none;
 }
 .products-item__inner {
     display: flex;
@@ -122,6 +124,7 @@
     font-size: 14px;
     line-height: 14px;
     text-align: center;
+    opacity: .45;
 }
 
 .products-more{

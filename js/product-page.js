@@ -202,6 +202,6 @@ products.forEach(i => {
     DIV2.append(BTN, TITLE, LINK)
     LINK.append(IMG2, locName)
 
-    productsUl.appendChild(DIV)
+    productPageProducts.appendChild(DIV)
   })
   

@@ -45,13 +45,14 @@
     cursor: pointer;
 }
 .footer-links__title {
-    font-family: Ruberoid4;
+    font-family: Ruberoid3;
     font-size: 16px;
     line-height: 16px;
     color: white;
     opacity: .45;
+    user-select: none;
 }
-hr{
+.footer hr{
     width: 100%;
     height: 1px;
     color: white;

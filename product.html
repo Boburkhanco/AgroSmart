@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Product Page</title>
+</head>
+<body>
+    
+     <!-- Header  -->
+     <header class="header">
+         <div class="hamburger-menu__toggler" id="menuToggler">
+             <img class="product-num__img" class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="15">
+             <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
+         </div>
+         <a href="index.html">
+             <img src="./images/999.svg" alt="" class="header__logo" >
+         </a>
+         <div class="search-part" id="searchPart">
+             <input type="text" class="search-space">
+             <button class="submit-btn" id="submitBtn">Submit</button>
+         </div>
+         <ul class="header-menu" id="headerMenu">
+             <li class="header-menu__item"><a href="#" class="header-menu__link product-header__menu-link">эълон Бериш</a></li>
+         </ul>
+ 
+         <div class="search-btn product__search-btn" id="searchBtn"></div>
+         <select class="form-select languages" id="langSort" aria-label="Language Options">
+             <option selected>Uz</option>
+             <option value="">Криль</option>
+         </select>
+         <a href="tel: +998332771666" class="header-contact__link">
+                 <span class="header-contact__btn">
+                     <p class="header-contact__num">+998 33 277 1666</p>
+                     <span class="call-img"></span>
+                 </span>
+         </a>
+     </header>
+     <!-- end of header  -->
+
+     <!-- Single Product Info -->
+     <div class="container product-cont">
+        <section class="productinfo">
+            <img class="productinfo-img" src="./images/olma(product)@2x.png" alt="">
+            <div class="productinfo-inner">
+                <h3 class="productinfo-inner__title">Куёш нурига тyйинган олма</h3>
+                <p class="productinfo-inner__text">  Olma sharbati yurak-qon tomir tizimini mustahkamlaydi, aqliy mehnat bilan shug'ullanuvchi kishilar uchun juda foydali. Sharbatda qon hosil qiluvchi elementlar ko'p. Yangi tayyorlangan olma sharbati safro haydash va siydik haydash xususiyatiga ega. Uni gepatoxoletsistit xastaligida, buyrakda tosh yig'ilganida, oshqozon-ichak kasalliklarida, ateroskleroz xastaligida, organizamdagi modda almashinuvi jarayonlari (semirish, artrit, qo'l-oyoqlarning zirqirab og'rishi) buzilganida ichish tavsiya etiladi.</p>
+                <div class="productinfo-inner__cost">
+                   <h2 class="p-cost">12000</h2> 
+                   <h2 class="p-value">&nbsp;сум</h2> 
+                   <p class="p-info">&nbsp;/ 1 кг нархи</p>
+                </div>
+            </div>
+        </section>
+        <div class="product-contact">
+            <a href="#" class="product-contact__location-link">
+               <img class="location-logo" src="./images/Location.svg" alt="" width="16" height="16">
+               <p class="product-contact__location-name">Фаргона вилояти Ўзбекистон тумани </p>
+            </a>
+            <div class="product-owner">
+                <h4 class="product-owner__name">Ахрор Ортиков</h4>
+                <h4 class="product-date">17.11.2021</h4>
+            </div>
+        </div>
+        <hr class="product-contact__line">
+        <div class="product-num">
+            <h4 class="product-num__title">Богбон билан богланиш:</h4>
+            <a class="product-num__tel" href="tel: +998 90 123 4567"><img class="product-num__img" src="./images/phone-colored.svg" alt="" width="24" height="24">+998 (90) 123-45-67</a>
+            <a class="product-num__tel" href="tel: +998 90 123 4567"><img class="product-num__img" src="./images/phone-colored.svg" alt="" width="24" height="24">+998 (90) 090-90-90</a>
+        </div>
+     </div>
+     <!-- end of Single Product Info  -->
+
+     <!-- products  -->
+     <div class="products-again container">
+         <!-- title  -->
+        <h3 class="product-products__title">Яна бошка махсулотлар</h3>
+        <!-- rendering  -->
+        <div class="products" id="productPageProducts"></div>
+        <!-- more  -->
+        <div class="p-more" id="productMore">Янада кўпроқ</div>
+     </div>
+     <!-- end of products  -->
+
+     <!-- Footer  -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="index.html">
+                <img class="footer-content__logo" src="./images/White green 1.svg" alt="">
+            </a>
+            <div class="footer-content__contact">
+                <a href="#">info@gmail.com</a>
+                <a href="tel: +998 33 277 1666">+998 33 277 1666</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-links">
+            <div class="footer-links__social">
+                <a class="social" href="https://www.facebook.com/agrosmartuz"><img src="./images/facebooklogo.svg" alt="" width="24" height="24"></a>
+                <a class="social" href="https://www.instagram.com/agro_smart.uz"><img src="./images/instagramlogo.svg" alt="" width="24" height="24"></a>
+                <a class="social" href="https://t.me/agrosmartuz"><img src="./images/telegramlogo.svg" alt="" width="24" height="24"></a>
+                <a class="social" href="https://youtube.com/channel/UC4dPkEQ5IWeIx_Pg6198WsA"><img src="./images/youtubelogo.svg" alt="" width="24" height="24"></a>
+            </div>
+            <h5 class="footer-links__title">Created by Khabibullaev</h5>
+        </div>
+    </footer>
+    <!-- End of Footer  -->
+
+    <script src="./js/product-page.js"></script>
+</body>
+</html>
