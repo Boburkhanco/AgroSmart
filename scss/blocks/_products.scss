@@ -130,16 +130,18 @@
 .products-more{
     width: 92%;
     height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.45);
+    border: 2px solid #0D515C;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: .4S;
 }
 .products-more:hover{
-    border:2px solid black;
     cursor: pointer;
+    background-color: #0D515C;
+    color: #FFF;
     transition: .4s;
 }
 
@@ -184,13 +186,13 @@
     }
     .products-more{
         max-width: 140px;
-        background: #22AD77;
-        border: 0;
-        color: white;
-        align-self: flex-end;
-        margin-right: 40px;
+        background-color: #0D515C;
+        color: #fff;
+        align-self: center;
     }
     .products-more:hover{
-        border: 0;
+        border-color: #0D515C;
+        background-color: #fff;
+        color: #0D515C;
     }
 }

@@ -13,7 +13,7 @@
     <div class="bg-blur"></div>
     <header class="header">
         <div class="hamburger-menu__toggler" id="menuToggler">
-            <img class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="15">
+            <img class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="30">
             <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
         </div>
         <a href="index.html">
@@ -26,7 +26,7 @@
         <ul class="header-menu" id="headerMenu">
             <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li> -->
             <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li> -->
-            <li class="header-menu__item"><a href="#" class="header-menu__link">эълон Бериш</a></li>
+            <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link">эълон Бериш</a></li>
             <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li> -->
         </ul>
 
@@ -35,12 +35,7 @@
             <option selected>Uz</option>
             <option value="">Криль</option>
         </select>
-        <a href="tel: +998332771666" class="header-contact__link">
-                <span class="header-contact__btn">
-                    <p class="header-contact__num">+998 33 277 1666</p>
-                    <span class="call-img"></span>
-                </span>
-        </a>
+        <a href="tel: +998909580059" class="header-contact__btn">+998 90 958 0059</a>
     </header>
     <!-- end of header  -->
 
@@ -49,7 +44,7 @@
         <ul class="header-menu__hamburger" id="menuHamburger">
             <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li>
             <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li>
-            <li class="header-menu__item"><a href="#" class="header-menu__link">эълон Бериш</a></li>
+            <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link">эълон Бериш</a></li>
             <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li>
             <select class="form-select languages" id="langSortH" aria-label="Language Options">
                 <option selected>Uz</option>
@@ -88,13 +83,12 @@
     <!-- end of marquee  -->
 
     <!-- Container Main  -->
-    <div class="main container">
+    <div class="main-body container">
         <h2 class="main-title">Ўз махсулотингизни сотинг ва сотиб олинг.</h2>
         <!-- Sorting  -->
         <div class="sorting">
             <select class="form-select tanlov categories" id="catSort" aria-label="Category Options">
-                <option selected>Категорияни танланг</option>
-                <option value=""> Маҳсулот ёки хизматларни танланг</option> 
+                 <option selected> Маҳсулот ёки хизматларни танланг</option> 
                  <option value="">Мевалар</option> 
                  <option value="">Ситрус мевалар</option> 
                  <option value="">Қуритилган мевалар</option>
@@ -135,6 +129,10 @@
                  <option value="">Гидро-мелероция хизматлари</option> 
                  <option value="">Сув хўжалиги корхоналари</option> 
                  <option value="">Қурилиш учун тош, қум ва ёғоч</option> 
+                 <option value="">Ўрмон хўжаликлари</option>
+                 <option value="">Визирлик ва давлат ташкилотлари</option>
+                 <option value="">Банк ва лизинг ташкилотлари</option>
+                 <option value="">Тузламалар</option>
             </select>
             <select class="form-select tanlov regions" id="regSort" aria-label="Region Options">
                 <option selected>Вилоятни танланг</option>
@@ -203,42 +201,55 @@
             <div class="products-more" id="productMore">Янада кўпроқ</div>
         </section>
     </div>
-
-    <!-- Agro Info  -->
-    <section class="agroinfo">
-        <div class="agroinfo-img"></div>
-    </section>
-    <div class="agroinfo-inner__bg">
-        <div class="agroinfo-inner">
-            <img src="./images/999.svg" alt="" class="agroinfo-inner__logo">
-            <p class="agroinfo-inner__text">
-                “Agro Smart” 3 йилдан буён янги ва курутилган кишлок хЎжалиги махсулотларини етказиб берувчи булиб хисобланади.
-            </p>
-            <span class="agroinfo-inner__btn"></span>
-        </div>
-    </div>
+    
 
     <!-- Footer  -->
     <footer class="footer">
-        <div class="footer-content">
-            <a href="index.html">
-                <img class="footer-content__logo" src="./images/White green 1.svg" alt="">
-            </a>
-            <div class="footer-content__contact">
-                <a href="#">info@gmail.com</a>
-                <a href="tel: +998 33 277 1666">+998 33 277 1666</a>
+        <div class="footer-body">
+            <div class="footer-media">
+                <a href="index.html">
+                    <img class="footer-media__logo" src="./images/White green 1.svg" alt="">
+                </a>
+                <div class="footer-links__social">
+                    <a class="social-link" href="https://www.facebook.com/agrosmartuz"><img src="./images/facebooklogo.svg" alt="" width="24" height="24"></a>
+                    <a class="social-link" href="https://www.instagram.com/agro_smart.uz"><img src="./images/instagramlogo.svg" alt="" width="24" height="24"></a>
+                    <a class="social-link" href="https://t.me/agrosmartuz"><img src="./images/telegramlogo.svg" alt="" width="24" height="24"></a>
+                    <a class="social-link" href="https://youtube.com/channel/UC4dPkEQ5IWeIx_Pg6198WsA"><img src="./images/youtubelogo.svg" alt="" width="24" height="24"></a>
+                    <a class="social-link" href="https://tiktok.com/@agro_smart.uz"><img src="./images/tiktok.svg" alt="" width="24" height="24"></a>
+                </div>
+                <div class="footer-media__info">
+                    <p>Қишлоқ ҳўжалигидаги товар ва ҳизматларни сотиш ва сотиб олиш учун яратилган онлайн платформа</p>
+                    <p>Сиз платформа орқали қишлоқ хўжалигининг барча соҳалари бўйича маҳсулот ва хизматларни топасиз.</p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h5 class="footer-contact__title">Tелефон</h5>
+                    <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
+                    <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
+        
+                    <h5 class="footer-contact__title">Email</h5>
+                    <a href="#" class="footer-contact__link">info@gmail.com</a>
+                    <a href="#" class="footer-contact__link">info@gmail.com</a>
+                </div>
+                <div class="footer-menu">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">сотувчи</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Олувчи</a></li>
+                    <li class="footer-menu__item"><a href="./elonberish.html" class="footer-menu__link">эълон Бериш</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Руйхатдан утиш</a></li>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="footer-links">
-            <div class="footer-links__social">
-                <a class="social" href="https://www.facebook.com/agrosmartuz"><img src="./images/facebooklogo.svg" alt="" width="24" height="24"></a>
-                <a class="social" href="https://www.instagram.com/agro_smart.uz"><img src="./images/instagramlogo.svg" alt="" width="24" height="24"></a>
-                <a class="social" href="https://t.me/agrosmartuz"><img src="./images/telegramlogo.svg" alt="" width="24" height="24"></a>
-                <a class="social" href="https://youtube.com/channel/UC4dPkEQ5IWeIx_Pg6198WsA"><img src="./images/youtubelogo.svg" alt="" width="24" height="24"></a>
-            </div>
-            <h5 class="footer-links__title">Created by Khabibullaev</h5>
+        <hr class="footer-line">
+        <!-- Footer Copyrights  -->
+        <div class="footer-copyrights">
+            <p>copyright © 2021 agro-smart.uz</p>
+            <p>Барча ҳуқуқлар ҳимояланган.</p>
         </div>
+        <div class="developer">
+            <h5>Created by Khabibullaev</h5>
+        </div>
+        <!-- End of Footer Copyrights  -->
     </footer>
     <!-- End of Footer  -->
     
@@ -246,6 +257,7 @@
 
 
 
+    <script src="./js/hamburger.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

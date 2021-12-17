@@ -1,5 +1,13 @@
 .product-header__menu-link{
-    color: #0D515C;;
+    color: #22AD77;
+    border: 2px solid #22AD77;
+    transition: .4s;
+
+}
+.product-header__menu-link:hover{
+    background-color: #22AD77;
+    transition: .4s;
+    color: #fff;
 }
 .product__search-btn{
     border: 1px solid #22AD77;
@@ -11,6 +19,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-top: 50px;
 }
 .productinfo-img {
     width: 500px;
@@ -65,8 +74,6 @@
     font-family: Ruberoid;
     display: flex;
     margin-top: 40px;
-}
-.location-logo {
 }
 .product-contact__location-name {
     color: #262626;

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>E'lon Berish Page</title>
+</head>
+<body>
+    <!-- Header  -->
+    <header class="header">
+        <div class="hamburger-menu__toggler" id="menuToggler">
+            <img class="product-num__img" class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="15">
+            <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
+        </div>
+        <a href="index.html">
+            <img src="./images/999.svg" alt="" class="header__logo" >
+        </a>
+        <div class="search-part" id="searchPart">
+            <input type="text" class="search-space">
+            <button class="submit-btn" id="submitBtn">Submit</button>
+        </div>
+        <ul class="header-menu" id="headerMenu">
+            <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link product-header__menu-link">эълон Бериш</a></li>
+        </ul>
+
+        <div class="search-btn product__search-btn" id="searchBtn"></div>
+        <select class="form-select languages" id="langSort" aria-label="Language Options">
+            <option selected>Uz</option>
+            <option value="">Криль</option>
+        </select>
+        <a href="tel: +998909580059" class="header-contact__btn">+998 90 958 0059</a>
+    </header>
+    <!-- end of header  -->
+
+    <!-- Hamburger Menu  -->
+    <ul class="header-menu__hamburger" id="menuHamburger">
+       <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li>
+       <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li>
+       <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link">эълон Бериш</a></li>
+       <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li>
+       <select class="form-select languages" id="langSortH" aria-label="Language Options">
+           <option selected>Uz</option>
+           <option value="kr">Криль</option>
+       </select>
+    </ul>
+    <!-- End of Hamburger Menu  -->
+
+
+    <!-- e'lon berish uchun  -->
+    <div class="elon container">
+        <div class="yourinfo">
+            <!-- Category Sorting  -->
+            <div class="elon-cat">
+                <label for="catSort">Маҳсулот категорияси</label>
+                <select class="form-select categories " id="catSort" aria-label="Category Options">
+                    <option selected>Маҳсулот ёки хизматларни танланг</option> 
+                    <option value="">Мевалар</option> 
+                    <option value="">Ситрус мевалар</option> 
+                    <option value="">Қуритилган мевалар</option>
+                    <option value="">Полиз экинлари</option>   
+                    <option value="">Сабзавот экинлари</option> 
+                    <option value="">Кўкатлар</option>
+                    <option value="">Зироворлар</option>                                                       
+                    <option value="">Бошоқли экинлар</option>
+                    <option value="">Дуккакли экинлар</option>
+                    <option value="">Интенсив боғлар</option> 
+                    <option value="">Узумчилик</option> 
+                    <option value="">Уруғлар</option>
+                    <option value="">Доривор ўсимликлар</option>
+                    <option value="">Мевали ва манзарали дарахт кўчатлари</option>
+                    <option value="">Уй хайвонлари</option>
+                    <option value="">Паррандачилик</option>                    
+                    <option value="">Чорвачилик</option>
+                    <option value="">Балиқчилик</option>
+                    <option value="">Асаларичилик</option>
+                    <option value="">Пиллачилик</option>
+                    <option value="">Қушлар</option>
+                    <option value="">Ветеринария воситалари ва хизматлари</option>  
+                    <option value="">Деҳқончилик учун ижара ер майдони</option> 
+                    <option value="">Чорвачилик учун ижара ер майдони</option> 
+                    <option value="">Газон ва гул кўчатлари</option>
+                    <option value="">Ланшафт ва декорация хизматлари</option>                    
+                    <option value="">Чорва учун ем-хашаклар</option>
+                    <option value="">Қишлоқ хўжалиги техника хизмати</option>
+                    <option value="">Томчилатиб суғориш воситалари ва хизматлари</option>
+                    <option value="">Иссиқхона воситалари ва хизматлари</option>
+                    <option value="">Ўсимликлар учун дори воситалари</option>                     
+                    <option value="">Халқаро логистика хизматлари</option> 
+                    <option value="">Ўзбекистон бўйлаб логистика хизматлари</option> 
+                    <option value="">Маҳсулотларни сақлаш омборлари</option>
+                    <option value="">Експорт ва импорт корхоналари</option> 
+                    <option value="">Агро туризим ташкилотлари</option>
+                    <option value="">Қишлоқ хўжалиги корхоналари</option>
+                    <option value="">Гидро-мелероция хизматлари</option> 
+                    <option value="">Сув хўжалиги корхоналари</option> 
+                    <option value="">Қурилиш учун тош, қум ва ёғоч</option> 
+                </select>
+            </div>
+
+            <!-- Region Sorting  -->
+            <div class="elon-reg">
+                <label for="regSort">Вилоят</label>
+                <select class="form-select regions" id="regSort" aria-label="Region Options">
+                    <option selected>Вилоятни танланг</option>
+                    <option value="">Тошкент шаҳри</option> 
+                    <option value="">Андижон вилояти</option> 
+                    <option value="">Бухоро вилояти</option> 
+                    <option value="">Фарғона вилояти</option> 
+                    <option value="">Жиззах вилояти</option> 
+                    <option value="">Хоразм вилояти</option> 
+                    <option value="">Наманган вилояти</option> 
+                    <option value="">Навоий вилояти</option> 
+                    <option value="">Қашқадарё вилояти</option> 
+                    <option value="">Қорақолпоғистон Республикаси</option> 
+                    <option value="">Самарқанд вилояти</option> 
+                    <option value="">Сирдарё вилояти</option> 
+                    <option value="">Сурхандарё вилояти</option> 
+                    <option value="">Тошкент вилояти</option>
+                </select>
+            </div>
+            
+            <!-- District Sorting  -->
+            <div class="elon-dis">
+                <label for="disSort">Туман</label>
+                <select class="form-select district" id="disSort" aria-label="District Options">
+                    <option selected>Туманни танланг</option>
+                    <option value="">Андижон шаҳри</option> 
+                    <option value="">Андижон тумани</option> 
+                    <option value="">Асака тумани</option> 
+                    <option value="">Балиқчи тумани</option> 
+                    <option value="">Бўз тумани</option> 
+                    <option value="">Булоқбоши тумани</option> 
+                    <option value="">Избосган тумани</option> 
+                    <option value="">Жалақудуқ тумани</option> 
+                    <option value="">Хўжаобод тумани</option> 
+                    <option value="">Қўрғонтепа тумани</option> 
+                    <option value="">Марҳамат тумани</option> 
+                    <option value="">Ўлтинкўл тумани</option> 
+                    <option value="">Пахтаобод тумани</option> 
+                    <option value="">Шаҳрихон тумани</option>                    
+                    <option value="">Улуғнор тумани</option> 
+                </select>
+            </div>
+            
+            <!-- User Name  -->
+            <div class="elon-user">
+                <label for="notifier">Эълон берувчи исми</label>
+                <input  class="form-control user-name"  type="text" id="notifier" required>
+            </div>
+
+            <!-- User Phone number  -->
+            <div class="elon-number">
+                <label for="phoneNum">Телефон номер</label>
+                <input  class="form-control user-num"  type="tel" id="phoneNum" placeholder="+998 |" required>
+            </div>
+            
+            <!-- Narx  -->
+            <div class="elon-cost">
+                <label for="productCost">Белгиланган нарх</label>
+                <input  class="form-control user-cost"  type="number" id="productCost" placeholder="| сўм">
+            </div>
+            
+            <!-- Comments  -->
+            <div class="elon-comment">
+                <label for="">Маҳсулот ҳақида қисчақа изоҳ</label>
+                <textarea class="form-control user-comment" id="exampleFormControlTextarea1" rows="3" placeholder="изоҳ"></textarea>
+            </div>
+        </div>
+        <div class="image-uploading">
+            <label for="" class="upload-text">Расмни юкланг</label>
+            <div class="upload">
+                <div class="uploader"></div>
+                <div class="others">
+                    <div class="tinys"></div>
+                    <div class="tinys"></div>
+                    <div class="tinys"></div>
+                    <div class="tinys"></div>
+                </div>
+            </div>
+            <div class="send-btn">Эълон бериш</div>
+        </div>
+    </div>
+    <!-- end of  "e'lon berish uchun"  -->
+
+
+
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <div class="footer-body">
+            <div class="footer-media">
+                <a href="index.html">
+                    <img class="footer-media__logo" src="./images/White green 1.svg" alt="">
+                </a>
+                <div class="footer-links__social">
+                    <a class="social-link" href="https://www.facebook.com/agrosmartuz"><img src="./images/facebooklogo.svg" alt="" width="24" height="24"></a>
+                    <a class="social-link" href="https://www.instagram.com/agro_smart.uz"><img src="./images/instagramlogo.svg" alt="" width="24" height="24"></a>
+                    <a class="social-link" href="https://t.me/agrosmartuz"><img src="./images/telegramlogo.svg" alt="" width="24" height="24"></a>
+                    <a class="social-link" href="https://youtube.com/channel/UC4dPkEQ5IWeIx_Pg6198WsA"><img src="./images/youtubelogo.svg" alt="" width="24" height="24"></a>
+                    <a class="social-link" href="https://tiktok.com/@agro_smart.uz"><img src="./images/tiktok.svg" alt="" width="24" height="24"></a>
+                </div>
+                <div class="footer-media__info">
+                    <p>Қишлоқ ҳўжалигидаги товар ва ҳизматларни сотиш ва сотиб олиш учун яратилган онлайн платформа</p>
+                    <p>Сиз платформа орқали қишлоқ хўжалигининг барча соҳалари бўйича маҳсулот ва хизматларни топасиз.</p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h5 class="footer-contact__title">Tелефон</h5>
+                    <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
+                    <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
+        
+                    <h5 class="footer-contact__title">Email</h5>
+                    <a href="#" class="footer-contact__link">info@gmail.com</a>
+                    <a href="#" class="footer-contact__link">info@gmail.com</a>
+                </div>
+                <div class="footer-menu">
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">сотувчи</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Олувчи</a></li>
+                    <li class="footer-menu__item"><a href="./elonberish.html" class="footer-menu__link">эълон Бериш</a></li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Руйхатдан утиш</a></li>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Line  -->
+        <hr class="footer-line">
+        <div class="footer-copyrights">
+            <p>copyright © 2021 agro-smart.uz</p>
+            <p>Барча ҳуқуқлар ҳимояланган.</p>
+        </div>
+        <div class="developer">
+            <h5>Created by Khabibullaev</h5>
+        </div>
+    </footer>
+    <!-- End of Footer  -->
+    
+    
+
+    <script src="./js/hamburger.js"></script>
+</body>
+</html>
