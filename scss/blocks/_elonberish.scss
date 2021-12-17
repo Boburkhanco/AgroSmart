@@ -69,19 +69,24 @@
     margin-left: 10px;
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .upload-text{
     margin-top: 40px;
     margin-bottom: 4px;
-    margin-left: 5px;
+    margin-left: 10px;
     font-size: 13px;
     line-height: 22px;
     color: #084A4F;
     opacity: 0.7;
     font-family: Ruberoid;
+    align-self: flex-start;
 }
 .upload {
-    width: 100%;
+    width: 96%;
     height: 360px;
     border: 1px solid #084A4F;
     border-radius: 4px;
@@ -136,7 +141,9 @@
     font-size: 14px;
     line-height: 20px;
     margin-top: 10px;
-    float: right;
+    margin-right: 10px;
+    align-self: flex-end;
+
 }
 .send-btn:hover{
     cursor: pointer;
@@ -145,6 +152,9 @@
 
 /* Tablet */
 @media only screen and (max-width: 800px) {
+    .upload{
+        margin-right: 0;
+    }
     .image-uploading{
         margin-left: 30px;
         margin-right: 30px;
@@ -166,6 +176,7 @@
     }
     .upload{
         height: 280px;
+        margin: 0;
     }
     .tinys{
         width: 60px;
