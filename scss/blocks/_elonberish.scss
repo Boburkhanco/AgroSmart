@@ -213,6 +213,23 @@
     font-family: Ruberoid;
 }
 
+/* BreadCrumbs */
+
+.breadcrumb{
+    font-family: Ruberoid4;
+    font-size: 12px;
+    display: flex;
+}
+.link-joyi{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.35);
+}
+.is-active{
+    text-decoration: none;
+    color: #22AD77;
+}
+
+
 /* Tablet */
 @media only screen and (max-width: 800px) {
     .upload{

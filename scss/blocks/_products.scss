@@ -46,6 +46,7 @@
 .products-item__link{
     text-decoration: none;
     color: #0D515C;
+    margin-top: 25px;
 }
 .products-item__inner {
     display: flex;
@@ -80,7 +81,6 @@
     color: #0D515C;
     text-align: center;
     margin: 0;
-    margin-top: 25px;
 }
 .products-item__inner-cost{
     margin-bottom: 25px;
@@ -99,6 +99,9 @@
     text-align: center;
     opacity: .45;
     display: flex;
+    height: 15px;
+    padding-top: 3px;
+    padding-bottom: 9px;
 }
 .location-name::before{
     content: "";
@@ -122,6 +125,7 @@
     align-items: center;
     justify-content: center;
     transition: .4S;
+    margin: 0 auto;
 }
 .products-more:hover{
     cursor: pointer;
