@@ -9,7 +9,6 @@
     font-size: 32px;
     line-height: 38px;
     text-transform: uppercase;
-    max-width: 500px;
     color: hsl(188, 75%, 21%);
     font-family: Ruberoid;
     text-align: center;
@@ -44,40 +43,9 @@
     display: flex;
     justify-content: flex-end;
 }
-.products-item__img-bookmark {
-    width: 30px;
-    height: 30px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    display: block;
-    background-image: url("./../images/bookmark-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin: 8px 10px 0 0;
-    transition: .3s;
-}
-.products-item__img-bookmark:hover{
-    border-color: #0D515C;
-    cursor: pointer;
-    transition: .3s;
-}
-.products-item__img-options {
-    position: absolute;
-    width: 50px;
-    height: 10px;
-    display: block;
-    background-image: url("./../images/options-dots.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    transform: translate(-18px,-12px);
-    align-self: flex-end;
-    transition: .3s;
-    cursor: pointer;
-}
 .products-item__link{
     text-decoration: none;
+    color: #0D515C;
 }
 .products-item__inner {
     display: flex;
@@ -106,11 +74,16 @@
     border-color: #0D515C;
     transition: .4s ease-in;
 }
-.products-item__inner-title {
+.products-item__inner-title, .products-item__inner-cost {
     font-size: 20px;
     line-height: 23px;
     color: #0D515C;
     text-align: center;
+    margin: 0;
+    margin-top: 25px;
+}
+.products-item__inner-cost{
+    margin-bottom: 25px;
 }
 .products-item__inner-link {
     display: flex;
@@ -125,6 +98,18 @@
     line-height: 14px;
     text-align: center;
     opacity: .45;
+    display: flex;
+}
+.location-name::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("./../images/location-vector.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 15px;
 }
 
 .products-more{

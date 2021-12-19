@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Product Page</title>
+    <title>Tasdiqlash Page</title>
 </head>
 <body>
     
-    <!-- Header  -->
-    <header class="header">
+     <!-- Header  -->
+     <header class="header">
         <div class="hamburger-menu__toggler" id="menuToggler">
             <img class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="30">
             <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
@@ -39,55 +39,23 @@
            <option value="kr">Криль</option>
        </select>
     </ul>
-     <!-- End of Hamburger Menu  -->
+    <!-- End of Hamburger Menu  -->
 
-     <!-- Single Product Info -->
-     <div class="container product-cont">
-        <section class="productinfo">
-            <img class="productinfo-img" src="./images/olma(product)@2x.png" alt="">
-            <div class="productinfo-inner">
-                <h3 class="productinfo-inner__title">Куёш нурига тyйинган олма</h3>
-                <hr class="product-inner__line">
-                <p class="p-value__text">12 тонна бор</p>
-                <p class="productinfo-inner__text">  Olma sharbati yurak-qon tomir tizimini mustahkamlaydi, aqliy mehnat bilan shug'ullanuvchi kishilar uchun juda foydali. Sharbatda qon hosil qiluvchi elementlar ko'p. Yangi tayyorlangan olma sharbati safro haydash va siydik haydash xususiyatiga ega. Uni gepatoxoletsistit xastaligida, buyrakda tosh yig'ilganida, oshqozon-ichak kasalliklarida, ateroskleroz xastaligida, organizamdagi modda almashinuvi jarayonlari (semirish, artrit, qo'l-oyoqlarning zirqirab og'rishi) buzilganida ichish tavsiya etiladi.</p>
-                <div class="productinfo-inner__cost">
-                   <h2 class="p-cost">12000</h2> 
-                   <h2 class="p-value">&nbsp;сум</h2> 
-                   <p class="p-info">&nbsp;/ 1 кг нархи</p>
-                </div>
-            </div>
-        </section>
-        <div class="product-contact">
-            <a href="#" class="product-contact__location-link">
-               <img class="location-logo" src="./images/Location.svg" alt="" width="16" height="16">
-               <p class="product-contact__location-name">Фаргона вилояти Ўзбекистон тумани </p>
-            </a>
-            <div class="product-owner">
-                <h4 class="product-owner__name">Ахрор Ортиков</h4>
-                <h4 class="product-date">17.11.2021</h4>
-            </div>
-        </div>
-        <hr class="product-contact__line">
-        <div class="product-num">
-            <h4 class="product-num__title">Богбон билан богланиш:</h4>
-            <a class="product-num__tel" href="tel: +998 90 123 4567"><img class="product-num__img" src="./images/phone-colored.svg" alt="" width="24" height="24">+998 (90) 123-45-67</a>
-            <a class="product-num__tel" href="tel: +998 90 123 4567"><img class="product-num__img" src="./images/phone-colored.svg" alt="" width="24" height="24">+998 (90) 090-90-90</a>
-        </div>
-     </div>
-     <!-- end of Single Product Info  -->
+    
+    <!-- Tasdiqlash Main Body -->
+    <div class="tasdiqlash">
+        <!-- User Confirming Password  -->
+        <label class="confirm-label" for="confirmLabel">Тасдиқлаш коди</label>
+        <input  class="form-control confirm-input"  type="tel" id="phoneNum" placeholder="****" required>
 
-     <!-- products  -->
-     <div class="products-again container">
-         <!-- title  -->
-            <h3 class="product-title">Сўнги<b style="color: #22AD77;"> эълонлар</b></h3>
-        <!-- rendering  -->
-        <div class="products" id="productPageProducts"></div>
-        <!-- more  -->
-        <div class="p-more" id="productMore">Янада кўпроқ</div>
-     </div>
-     <!-- end of products  -->
+        <!-- Tasdiqlayman  -->
+        <div class="confirm-btn" id="idConfirm">Тасдиқлайман</div>
+    </div>
+    <!-- End of Tasdiqlash Main Body -->
 
-    <!-- Footer  -->
+
+    
+   <!-- Footer  -->
     <footer class="footer">
         <div class="footer-body">
             <div class="footer-media">
@@ -112,13 +80,12 @@
                 </div>
                 <h5 class="footer-contact__title">Tелефон</h5>
                 <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
-    
+
                 <h5 class="footer-contact__title">Email</h5>
                 <a href="#" class="footer-contact__link">info@gmail.com</a>
             </div>
         </div>
         <hr class="footer-line">
-
         <!-- Footer Copyrights  -->
         <div class="footer-copyrights">
             <p>copyright © 2021 agro-smart.uz</p>
@@ -130,8 +97,8 @@
     </footer>
     <!-- End of Footer  -->
     
+    
 
     <script src="./js/hamburger.js"></script>
-    <script src="./js/product-page.js"></script>
 </body>
 </html>

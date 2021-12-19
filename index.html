@@ -9,7 +9,7 @@
 </head>
 <body>
 
-     <!-- Header  -->
+    <!-- Header  -->
     <div class="bg-blur"></div>
     <header class="header">
         <div class="hamburger-menu__toggler" id="menuToggler">
@@ -17,32 +17,22 @@
             <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
         </div>
         <a href="index.html">
-            <img src="./images/White green 1.svg" alt="" class="header__logo" >
+            <img src="./images/999.svg" alt="" class="header__logo" >
         </a>
-        <div class="search-part" id="searchPart">
-            <input type="text" class="search-space">
-            <button class="submit-btn" id="submitBtn">Submit</button>
+        <div class="controls">
+            <select class="form-select languages" id="langSort" aria-label="Language Options">
+                <option selected>Uz</option>
+                <option value="">Криль</option>
+            </select>
+            <a href="tel: +998909580059" class="header-contact__btn">+998 90 958 0059</a>
         </div>
-        <ul class="header-menu" id="headerMenu">
-            <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li> -->
-            <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li> -->
-            <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link">эълон Бериш</a></li>
-            <!-- <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li> -->
-        </ul>
-
-        <div class="search-btn" id="searchBtn"></div>
-        <select class="form-select languages" id="langSort" aria-label="Language Options">
-            <option selected>Uz</option>
-            <option value="">Криль</option>
-        </select>
-        <a href="tel: +998909580059" class="header-contact__btn">+998 90 958 0059</a>
     </header>
     <!-- end of header  -->
 
-    <!-- intro  -->
+    <!-- Hamburger Mobile Menu  -->
     <div class="intro">
         <ul class="header-menu__hamburger" id="menuHamburger">
-            <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li>
+            <li class="header-menu__item"><a href="./tasdiqlash.html" class="header-menu__link">сотувчи</a></li>
             <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li>
             <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link">эълон Бериш</a></li>
             <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li>
@@ -51,23 +41,27 @@
                 <option value="kr">Криль</option>
             </select>
         </ul>
-
-        <!-- Hero  -->
-        <section class="hero">
-            <h1 class="hero-title">Қишлоқ Хўжалиги маҳсулотларини сотинг ва сотиб олинг</h1>
-            <a href="#" class="hero__link-elon">эълон бериш</a>
-            <a href="#" class="youtube-btn hero__link-youtube">
-                <a href="https://youtube.com/channel/UC4dPkEQ5IWeIx_Pg6198WsA" class="youtube-btn__title-link">
-                    <span class="youtube-btn__inner">
-                        <span class="youtube-btn__img"></span>
-                        <h6 class="youtube-btn__title">Томоша қилиш</h6>
-                    </span> 
-                </a>
-            </a>
-        </section>
-        <!-- end of hero  -->
     </div>
-    <!-- end of intro  -->
+    <!-- End of Hamburger Mobile Menu  -->
+
+
+    <!-- Carousel  -->
+    <div class="this-hero" id="thisHero">
+        <div class="hero">
+            <h1 class="hero-title">Қишлоқ Хўжалиги маҳсулотларини сотинг
+                ва сотиб олинг</h1>
+            <a class="hero-btn__elon" href="./elonberish.html">эълон бериш</a>
+            <div class="hero-youtube">
+                <a class="hero-btn__youtube" href="https://youtube.com/channel/UC4dPkEQ5IWeIx_Pg6198WsA">
+                    <p class="hero-btn__youtube-title">Томоша қилиш</p>
+                </a>
+            </div>
+        </div>
+        <div class="carousel" id="thisCarousel">
+        </div>
+    </div>
+
+    <!-- End of Carousel  -->
 
     <!-- marquee  -->
     <div class="marquee-element">
@@ -84,56 +78,14 @@
 
     <!-- Container Main  -->
     <div class="main-body container">
-        <h2 class="main-title">Ўз махсулотингизни сотинг ва сотиб олинг.</h2>
+        <h2 class="main-title">Маҳсулот ёки хизматларни танланг</h2>
+        <div class="sort-controls">
+            <!-- Searching   -->
+        <div class="searching">
+            <input class="search" type="text" placeholder="Нимани қидиряпсиз?">
+        </div>
         <!-- Sorting  -->
         <div class="sorting">
-            <select class="form-select tanlov categories" id="catSort" aria-label="Category Options">
-                 <option selected> Маҳсулот ёки хизматларни танланг</option> 
-                 <option value="">Мевалар</option> 
-                 <option value="">Ситрус мевалар</option> 
-                 <option value="">Қуритилган мевалар</option>
-                 <option value="">Полиз экинлари</option>   
-                 <option value="">Сабзавот экинлари</option> 
-                 <option value="">Кўкатлар</option>
-                 <option value="">Зироворлар</option>                                                       
-                 <option value="">Бошоқли экинлар</option>
-                 <option value="">Дуккакли экинлар</option>
-                 <option value="">Интенсив боғлар</option> 
-                 <option value="">Узумчилик</option> 
-                 <option value="">Уруғлар</option>
-                 <option value="">Доривор ўсимликлар</option>
-                 <option value="">Мевали ва манзарали дарахт кўчатлари</option>
-                 <option value="">Уй хайвонлари</option>
-                 <option value="">Паррандачилик</option>                    
-                 <option value="">Чорвачилик</option>
-                 <option value="">Балиқчилик</option>
-                 <option value="">Асаларичилик</option>
-                 <option value="">Пиллачилик</option>
-                 <option value="">Қушлар</option>
-                 <option value="">Ветеринария воситалари ва хизматлари</option>  
-                 <option value="">Деҳқончилик учун ижара ер майдони</option> 
-                 <option value="">Чорвачилик учун ижара ер майдони</option> 
-                 <option value="">Газон ва гул кўчатлари</option>
-                 <option value="">Ланшафт ва декорация хизматлари</option>                    
-                 <option value="">Чорва учун ем-хашаклар</option>
-                 <option value="">Қишлоқ хўжалиги техника хизмати</option>
-                 <option value="">Томчилатиб суғориш воситалари ва хизматлари</option>
-                 <option value="">Иссиқхона воситалари ва хизматлари</option>
-                 <option value="">Ўсимликлар учун дори воситалари</option>                     
-                 <option value="">Халқаро логистика хизматлари</option> 
-                 <option value="">Ўзбекистон бўйлаб логистика хизматлари</option> 
-                 <option value="">Маҳсулотларни сақлаш омборлари</option>
-                 <option value="">Експорт ва импорт корхоналари</option> 
-                 <option value="">Агро туризим ташкилотлари</option>
-                 <option value="">Қишлоқ хўжалиги корхоналари</option>
-                 <option value="">Гидро-мелероция хизматлари</option> 
-                 <option value="">Сув хўжалиги корхоналари</option> 
-                 <option value="">Қурилиш учун тош, қум ва ёғоч</option> 
-                 <option value="">Ўрмон хўжаликлари</option>
-                 <option value="">Визирлик ва давлат ташкилотлари</option>
-                 <option value="">Банк ва лизинг ташкилотлари</option>
-                 <option value="">Тузламалар</option>
-            </select>
             <select class="form-select tanlov regions" id="regSort" aria-label="Region Options">
                 <option selected>Вилоятни танланг</option>
                 <option value="">Тошкент шаҳри</option> 
@@ -171,26 +123,26 @@
             </select>
             <button class="btn-izlash">Излаш</button>
         </div>
+        </div>
 
         <!-- Products  -->
         <section class="product-part">
             <!-- main title  -->
-            <h3 class="product-title">БИЗДАГИ <b style="color: #22AD77;">МАХСУЛОТЛАР</b></h3>
+            <h3 class="product-title">Сўнги<b style="color: #22AD77;"> эълонлар</b></h3>
 
             <!-- Product Cards (Info)  -->
+           
             <div class="products" id="productsUl">
                 <!-- <div class="products-item" id="productsItem">
                     <div class="products-item__img">
-                        <span class="products-item__img-bookmark"></span>
-                        <span class="products-item__img-options"></span>
                     </div>
                     
                     <a href="./product.html" class="products-item__link">
                         <div class="products-item__inner">
                             <button type="submit" class="products-item__inner-btn">12.000 сўм</button>
                             <h4 class="products-item__inner-title">Куёш нурига тўйинган олма</h4>
+                            <h5 class="products-item__inner-cost">12 000</h5>
                             <a href="#location" class="products-item__inner-link">
-                                <img class="location-logo" src="./images/Location.svg" alt="" width="18" height="18">
                                 <p class="location-name">Фаргона вилояти Ўзбекистон тумани</p> 
                             </a>
                         </div>
@@ -222,22 +174,15 @@
                     <p>Сиз платформа орқали қишлоқ хўжалигининг барча соҳалари бўйича маҳсулот ва хизматларни топасиз.</p>
                 </div>
             </div>
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <h5 class="footer-contact__title">Tелефон</h5>
-                    <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
-                    <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
-        
-                    <h5 class="footer-contact__title">Email</h5>
-                    <a href="#" class="footer-contact__link">info@gmail.com</a>
-                    <a href="#" class="footer-contact__link">info@gmail.com</a>
-                </div>
+            <div class="footer-contact">
                 <div class="footer-menu">
-                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">сотувчи</a></li>
-                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Олувчи</a></li>
                     <li class="footer-menu__item"><a href="./elonberish.html" class="footer-menu__link">эълон Бериш</a></li>
-                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Руйхатдан утиш</a></li>
                 </div>
+                <h5 class="footer-contact__title">Tелефон</h5>
+                <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
+    
+                <h5 class="footer-contact__title">Email</h5>
+                <a href="#" class="footer-contact__link">info@gmail.com</a>
             </div>
         </div>
         <hr class="footer-line">
@@ -257,6 +202,7 @@
 
 
 
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./js/hamburger.js"></script>
     <script src="./js/main.js"></script>
 </body>

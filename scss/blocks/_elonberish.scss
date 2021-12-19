@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
 }
-.elon-cat, .elon-reg, .elon-dis, .elon-user, .user-name, .elon-number, .user-num, .elon-cost, .user-cost, .elon-comment {
+.elon-cat, .elon-reg, .elon-dis, .elon-user, .user-cat, .user-name, .elon-number, .user-num, .elon-cost, .user-cost, .elon-comment {
     display: flex;
     flex-direction: column;
     max-width: 300px;
@@ -20,7 +20,7 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.user-name, .user-num, .user-cost, .user-comment{
+.user-name, .user-cat, .user-num, .user-cost, .user-comment{
     min-height: 40px;
     background: #FFFFFF;
     border: 1px solid rgba(13, 81, 92, 0.25);
@@ -51,6 +51,13 @@
     opacity: 0.65;
     font-family: Ruberoid4;
 }
+.user-cat::placeholder{
+    font-size: 12px;
+    line-height: 21px;
+    color: #084A4F;
+    opacity: 0.65;
+    font-family: Ruberoid;
+}
 .yourinfo label{
     margin-top: 20px;
     margin-bottom: 4px;
@@ -71,11 +78,11 @@
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 }
 .upload-text{
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 4px;
     margin-left: 10px;
     font-size: 13px;
@@ -150,6 +157,62 @@
     background-color: #063c44;
 }
 
+/*Tasdiqlash Page*/
+.tasdiqlash{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.confirm-btn {
+    width: 35%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #0D515C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ruberoid;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+
+}
+.confirm-btn:hover{
+    cursor: pointer;
+    background-color: #063c44;
+}
+.confirm-input{
+    min-height: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(13, 81, 92, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 12px;
+    font-size: 16px;
+    width: 35%;
+}
+.confirm-input::placeholder{
+    font-size: 24px;
+    color: #084A4F;
+    opacity: 0.55;
+    font-family: Ruberoid4;
+}
+.confirm-label{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #084A4F;
+    opacity: 0.7;
+    font-family: Ruberoid;
+}
+
 /* Tablet */
 @media only screen and (max-width: 800px) {
     .upload{
@@ -167,10 +230,18 @@
     .yourinfo{
         margin: 0 auto;
     }
+    .confirm-btn, .confirm-input{
+        width: 60%;
+    }
 }
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
+    .elon-cat, .elon-reg, .elon-dis, .elon-user, .user-cat, .user-name, .elon-number, .user-num, .elon-cost, .user-cost, .elon-comment {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
     .uploader{
         height: 180px;
     }
@@ -182,4 +253,7 @@
         width: 60px;
         height: 45px;
     }
+    .confirm-btn, .confirm-input{
+        width: 75%;
+    }   
 }

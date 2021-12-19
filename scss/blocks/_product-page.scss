@@ -32,7 +32,7 @@
     font-size: 30px;
     line-height: 40px;
     font-family: Ruberoid;
-    color: #262626;
+    color: #0D515C;
 }
 .productinfo-inner__text {
     font-size: 20px;
@@ -50,6 +50,13 @@
     line-height: 55px;
     font-family: Ruberoid;
     color: #22AD77;
+}
+.p-value__text{
+    font-size: 30px;
+    line-height: 55px;
+    font-family: Ruberoid;
+    color: #22AD77;
+    margin: 0;
 }
 .p-value{
     font-size: 40px;
@@ -78,14 +85,14 @@
 .product-contact__location-name {
     color: #262626;
     opacity: .45;
-    font-family: Ruberoid;
+    font-family: Ruberoid4;
     font-size: 20px;
     line-height: 27px;
     margin: 0;
 }
 .product-owner {
     color: #262626;
-    font-family: Ruberoid;
+    font-family: Ruberoid4;
     font-size: 18px;
     line-height: 27px;
     display: flex;

@@ -1,13 +1,14 @@
-.intro{
-    width: 100%;
-    height: 720px;
-    background-image: url("./../images/menu-background.png") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
 }
 .bg-blur{
-    width: 100%;
+    width: 98%;
     height: 72px;
     background-image: url("./../images/bg-blurred.png");
     background-repeat: no-repeat;
@@ -15,15 +16,6 @@
     background-size: cover;
     position: absolute;
     filter: blur(10px);
-}
-.header {
-    width: 88%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    padding: 10px;
-    margin: 0 auto;
 }
 .header__logo{
     width: 249px;
@@ -46,20 +38,6 @@
 .product-num__img{
     margin-top: 7px;
 }
-.search-part {
-    display: flex;
-    justify-content: space-between;
-    width: 637px;
-    height: 27px;
-    margin: 16px 16px 16px 25px;
-    display: none;
-}
-.search-space {
-    width: 85%;
-    height: 100%;
-    border-radius: 2px;
-    border: 1px solid #c2c4c6;
-}
 .submit-btn {
     display: block;
     width: 80px;
@@ -74,13 +52,6 @@
     border-radius: 3px;
     font-family: Ruberoid;
     color: #fff;
-}
-.header-menu {
-    width: 678px;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    font-family: Ruberoid;
 }
 .dNone{
     display: none;
@@ -124,19 +95,23 @@
     margin-right: 10px;
     cursor: pointer;
 }
+.controls{
+    display: flex;
+    align-items: center;
+}
 .languages {
-    width: 63px;
+    width: 83px;
     height:30px;
     background-color: transparent;
+    color:#0D515C;
     border: 0;
-    text-decoration: none;
     outline: transparent;
-    color: #22AD77;
+    text-decoration: none;
+    font-family: Ruberoid4;
     font-size: 15px;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
-    font-family: Ruberoid4;
 }
 .header-contact__btn {
     text-decoration: none;
@@ -177,7 +152,7 @@
         display: flex ;
         flex-direction: column;
         align-items: center;
-        position: absolute;
+        position: relative;
         padding: 0;
         display: none;
         transition: .4s;

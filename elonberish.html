@@ -11,32 +11,25 @@
     <!-- Header  -->
     <header class="header">
         <div class="hamburger-menu__toggler" id="menuToggler">
-            <img class="product-num__img" class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="15">
+            <img class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="30">
             <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
         </div>
         <a href="index.html">
             <img src="./images/999.svg" alt="" class="header__logo" >
         </a>
-        <div class="search-part" id="searchPart">
-            <input type="text" class="search-space">
-            <button class="submit-btn" id="submitBtn">Submit</button>
+        <div class="controls">
+            <select class="form-select languages" id="langSort" aria-label="Language Options">
+                <option selected>Uz</option>
+                <option value="">Криль</option>
+            </select>
+            <a href="tel: +998909580059" class="header-contact__btn">+998 90 958 0059</a>
         </div>
-        <ul class="header-menu" id="headerMenu">
-            <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link product-header__menu-link">эълон Бериш</a></li>
-        </ul>
-
-        <div class="search-btn product__search-btn" id="searchBtn"></div>
-        <select class="form-select languages" id="langSort" aria-label="Language Options">
-            <option selected>Uz</option>
-            <option value="">Криль</option>
-        </select>
-        <a href="tel: +998909580059" class="header-contact__btn">+998 90 958 0059</a>
     </header>
     <!-- end of header  -->
 
     <!-- Hamburger Menu  -->
     <ul class="header-menu__hamburger" id="menuHamburger">
-       <li class="header-menu__item"><a href="#" class="header-menu__link">сотувчи</a></li>
+       <li class="header-menu__item"><a href="./tasdiqlash.html" class="header-menu__link">сотувчи</a></li>
        <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li>
        <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link">эълон Бериш</a></li>
        <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li>
@@ -54,49 +47,8 @@
             <!-- Category Sorting  -->
             <div class="elon-cat">
                 <label for="catSort">Маҳсулот категорияси</label>
-                <select class="form-select categories " id="catSort" aria-label="Category Options">
-                    <option selected>Маҳсулот ёки хизматларни танланг</option> 
-                    <option value="">Мевалар</option> 
-                    <option value="">Ситрус мевалар</option> 
-                    <option value="">Қуритилган мевалар</option>
-                    <option value="">Полиз экинлари</option>   
-                    <option value="">Сабзавот экинлари</option> 
-                    <option value="">Кўкатлар</option>
-                    <option value="">Зироворлар</option>                                                       
-                    <option value="">Бошоқли экинлар</option>
-                    <option value="">Дуккакли экинлар</option>
-                    <option value="">Интенсив боғлар</option> 
-                    <option value="">Узумчилик</option> 
-                    <option value="">Уруғлар</option>
-                    <option value="">Доривор ўсимликлар</option>
-                    <option value="">Мевали ва манзарали дарахт кўчатлари</option>
-                    <option value="">Уй хайвонлари</option>
-                    <option value="">Паррандачилик</option>                    
-                    <option value="">Чорвачилик</option>
-                    <option value="">Балиқчилик</option>
-                    <option value="">Асаларичилик</option>
-                    <option value="">Пиллачилик</option>
-                    <option value="">Қушлар</option>
-                    <option value="">Ветеринария воситалари ва хизматлари</option>  
-                    <option value="">Деҳқончилик учун ижара ер майдони</option> 
-                    <option value="">Чорвачилик учун ижара ер майдони</option> 
-                    <option value="">Газон ва гул кўчатлари</option>
-                    <option value="">Ланшафт ва декорация хизматлари</option>                    
-                    <option value="">Чорва учун ем-хашаклар</option>
-                    <option value="">Қишлоқ хўжалиги техника хизмати</option>
-                    <option value="">Томчилатиб суғориш воситалари ва хизматлари</option>
-                    <option value="">Иссиқхона воситалари ва хизматлари</option>
-                    <option value="">Ўсимликлар учун дори воситалари</option>                     
-                    <option value="">Халқаро логистика хизматлари</option> 
-                    <option value="">Ўзбекистон бўйлаб логистика хизматлари</option> 
-                    <option value="">Маҳсулотларни сақлаш омборлари</option>
-                    <option value="">Експорт ва импорт корхоналари</option> 
-                    <option value="">Агро туризим ташкилотлари</option>
-                    <option value="">Қишлоқ хўжалиги корхоналари</option>
-                    <option value="">Гидро-мелероция хизматлари</option> 
-                    <option value="">Сув хўжалиги корхоналари</option> 
-                    <option value="">Қурилиш учун тош, қум ва ёғоч</option> 
-                </select>
+                <input  class="form-control user-cat" placeholder="Маҳсулот номини киритинг" type="text" id="idCategory">
+                
             </div>
 
             <!-- Region Sorting  -->
@@ -159,7 +111,13 @@
             <!-- Narx  -->
             <div class="elon-cost">
                 <label for="productCost">Белгиланган нарх</label>
-                <input  class="form-control user-cost"  type="number" id="productCost" placeholder="| сўм">
+                <input  class="form-control user-cost"  type="number" id="productCost" placeholder="| сўм ">
+            </div>
+
+            <!-- Miqdori  -->
+            <div class="elon-cost">
+                <label for="productCost">Миқдори</label>
+                <input  class="form-control user-cost"  type="number" id="productCost" placeholder="| кг ">
             </div>
             
             <!-- Comments  -->
@@ -187,7 +145,7 @@
 
 
 
-    <!-- Footer  -->
+   <!-- Footer  -->
     <footer class="footer">
         <div class="footer-body">
             <div class="footer-media">
@@ -206,26 +164,19 @@
                     <p>Сиз платформа орқали қишлоқ хўжалигининг барча соҳалари бўйича маҳсулот ва хизматларни топасиз.</p>
                 </div>
             </div>
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <h5 class="footer-contact__title">Tелефон</h5>
-                    <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
-                    <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
-        
-                    <h5 class="footer-contact__title">Email</h5>
-                    <a href="#" class="footer-contact__link">info@gmail.com</a>
-                    <a href="#" class="footer-contact__link">info@gmail.com</a>
-                </div>
+            <div class="footer-contact">
                 <div class="footer-menu">
-                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">сотувчи</a></li>
-                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Олувчи</a></li>
                     <li class="footer-menu__item"><a href="./elonberish.html" class="footer-menu__link">эълон Бериш</a></li>
-                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">Руйхатдан утиш</a></li>
                 </div>
+                <h5 class="footer-contact__title">Tелефон</h5>
+                <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
+
+                <h5 class="footer-contact__title">Email</h5>
+                <a href="#" class="footer-contact__link">info@gmail.com</a>
             </div>
         </div>
-        <!-- Footer Line  -->
         <hr class="footer-line">
+        <!-- Footer Copyrights  -->
         <div class="footer-copyrights">
             <p>copyright © 2021 agro-smart.uz</p>
             <p>Барча ҳуқуқлар ҳимояланган.</p>

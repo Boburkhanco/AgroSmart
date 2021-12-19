@@ -1,100 +1,115 @@
-* {
-    box-sizing: border-box;
-}
+*{box-sizing: border-box;}
 .carousel {
+//   position: absolute;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  background-image: url("./../../images/imgs/pexels-johannes-plenio-1146708.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .carousel-item {
+    // position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2e2e2e;
+    top: 0;
+    left: 100%;
+
+    &.active {
+      left: 0;
+      transition: all 0.3s ease-out;
+    }
+    div {height: 100%;}
+  }
+}
+
+
+
+.hero {
     position: absolute;
     width: 100%;
-    height: 750px;
-    overflow: hidden;
-    background-color: #cdcdcd;
-    .carousel-item {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 1px solid #2e2e2e;
-        top: 0;
-        left: 100%;
-        &.active {
-            left: 0;
-            transition: all 0.3s ease-out;
-        }
-        div {height: 100%;}
-    }
-}
-.intro{
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-.hero {
-    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // position: relative;
 }
 .hero-title {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 80px;
-    max-width: 900px;
     text-align: center;
     text-transform: uppercase;
-    color: white;
-    margin-top: 160px;
     font-family: Ruberoid;
-}
-.hero__link-elon {
-    text-decoration: none;
     color: #FFFFFF;
-    font-size: 20px;
+    max-width: 750px;
+    margin: 0;
+}
+.hero-btn__elon{
+    font-size: 18px;
     line-height: 27px;
-    white-space: nowrap;
-    border-radius: 4px;
-    padding: 18px 40px 13px 50px;
-    background-color: #22AD77;
     text-transform: uppercase;
     font-family: Ruberoid;
-    transition: .4s;
-}
-.hero__link-elon:hover{
-    background-color: #ffffff;
-    color: #22AD77;
-    transition: .4s;
-}
-
-.hero__link-youtube {
-    text-decoration: none;
-}
-.youtube-btn__inner {
-    width: 227px;
-    height: 50px;
-    display: flex;
-    padding: 12px 17px 12px 21px;
-    align-items: center;
-    justify-content: space-around;
+    background-color: #22AD77;
+    color: #F3F8F6;
+    border: 2px solid transparent;
     border-radius: 4px;
-    background-color: #fff;
-    transform: translateY(80px);
-}
-.youtube-btn__img {
-    width: 34px;
-    height: 26px;
-    background-image: url("./../images/youtube 1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.youtube-btn__title {
     margin: 0;
+    padding: 16px 34px 12px 40px;
+    position: relative;
+    top: 40px;
+    transition: .4s;
+}
+.hero-btn__elon:hover{
+    color: #22AD77;
+    background-color: #fff;
+    transition: .4s;
+}
+.hero-youtube{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 20%;
+    position: relative;
+    right: 200px;
+    top: 90px;
+}
+.hero-btn__youtube {
     font-size: 16px;
     line-height: 24px;
     font-family: Ruberoid4;
-}
-.youtube-btn__title-link{
+    margin: 0;
+    padding: 10px 25px 8px 27px;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: .4s;
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
+.hero-btn__youtube-title{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.hero-btn__youtube-title::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("./../images/youtube 1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 10px;
+
+}
+
 .marquee-element{
     width: 100%;
     height: 100px;
@@ -124,19 +139,6 @@
 
 /* Tablet */
 @media only screen and (max-width: 800px) {
-    .hero-title{
-        font-size: 40px;
-        line-height: 50px;
-        margin-top: 210px;
-    }
-    .hero__link-elon {
-        font-size: 16px;
-        line-height: 22px;
-        padding: 15px 42px;
-    }
-    .hero__link-youtube{
-        display: none;
-    }
     .marquee-element{
         height: 80px;
     }
@@ -144,15 +146,57 @@
         font-size: 18px;
         height: 50px;
     }
+    .hero-title {
+        font-size: 30px;
+        line-height: 50px;
+        max-width: 550px;
+    }
+    .hero-btn__elon{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 15px 34px 12px 38px;
+        transition: .4s;
+    }
+    .hero-btn__youtube {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 8px 21px 6px 23px;
+        transition: .4s;
+    }
 
 }
-
+/* Mobile */
+@media only screen and (max-width: 640px) {
+    .hero-youtube{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        right: 0;
+    }
+    .hero-btn__elon{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 15px 32px 13px 36px;
+        transition: .4s;
+    }
+    .hero-btn__youtube {
+        font-size: 13px;
+        line-height: 20px;
+        padding: 7px 19px 5px 21px;
+        transition: .4s;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 550px) {
+    .hero-title {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 350px;
+    }
+}
 /* Mobile */
 @media only screen and (max-width: 480px) {
-    .hero-title{
-        font-size: 20px;
-        margin-top: 180px;
-    }
 
     .marquee-element{
         height: 60px;
@@ -161,4 +205,25 @@
         font-size: 15px;
         height: 45px;
     }
+    .hero-btn__elon{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 28px 9px 30px;
+        transition: .4s;
+    }
+    .hero-btn__youtube {
+        font-size: 12px;
+        line-height: 20px;
+        padding: 6px 17px 4px 19px;
+        transition: .4s;
+    }
 }
+
+
+
+
+
+
+  
+  
+  
