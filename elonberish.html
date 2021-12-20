@@ -10,10 +10,6 @@
 <body>
     <!-- Header  -->
     <header class="header">
-        <div class="hamburger-menu__toggler" id="menuToggler">
-            <img class="hamburger-menu__img" id="desktopMode" src="./images/7222827901556280999.svg" alt="" width="30" height="30">
-            <img class="mobile-menu__img" id="mobileMode" src="./images/times.svg" alt="" width="30" height="30">
-        </div>
         <a href="index.html">
             <img src="./images/999.svg" alt="" class="header__logo" >
         </a>
@@ -27,18 +23,7 @@
     </header>
     <!-- end of header  -->
 
-    <!-- Hamburger Menu  -->
-    <ul class="header-menu__hamburger" id="menuHamburger">
-       <li class="header-menu__item"><a href="./tasdiqlash.html" class="header-menu__link">сотувчи</a></li>
-       <li class="header-menu__item"><a href="#" class="header-menu__link">Олувчи</a></li>
-       <li class="header-menu__item"><a href="./elonberish.html" class="header-menu__link">эълон Бериш</a></li>
-       <li class="header-menu__item"><a href="#" class="header-menu__link">Руйхатдан утиш</a></li>
-       <select class="form-select languages" id="langSortH" aria-label="Language Options">
-           <option selected>Uz</option>
-           <option value="kr">Криль</option>
-       </select>
-    </ul>
-    <!-- End of Hamburger Menu  -->
+    
 
     <div class="container">
            <ul class="breadcrumb">
@@ -117,13 +102,15 @@
             <!-- Narx  -->
             <div class="elon-cost">
                 <label for="productCost">Белгиланган нарх</label>
-                <input  class="form-control user-cost"  type="number" id="productCost" placeholder="| сўм ">
+                <input  class="form-control user-cost"  type="number" id="productCost">
+                <span class="value-after">| sum</span>
             </div>
 
             <!-- Miqdori  -->
             <div class="elon-cost">
                 <label for="productCost">Миқдори</label>
-                <input  class="form-control user-cost"  type="number" id="productCost" placeholder="| кг ">
+                <input  class="form-control user-cost"  type="number" id="productCost">
+                <span class="value-afterr">| kg</span>
             </div>
             
             <!-- Comments  -->
@@ -143,7 +130,7 @@
                     <div class="tinys"></div>
                 </div>
             </div>
-            <div class="send-btn">Эълон бериш</div>
+            <a class="send-btn__link" href="./tasdiqlash.html"><div class="send-btn">Эълон бериш</div></a>
         </div>
     </div>
     <!-- end of  "e'lon berish uchun"  -->
@@ -152,7 +139,7 @@
 
 
    <!-- Footer  -->
-    <footer class="footer">
+    <footer class="footer elon-footer">
         <div class="footer-body">
             <div class="footer-media">
                 <a href="index.html">
@@ -175,7 +162,7 @@
                     <li class="footer-menu__item"><a href="./elonberish.html" class="footer-menu__link">эълон Бериш</a></li>
                 </div>
                 <h5 class="footer-contact__title">Tелефон</h5>
-                <a href="tel: +998 33 277 1666" class="footer-contact__link">+998 33 277 1666</a>
+                <a href="tel: +998 90 958 0059" class="footer-contact__link">+998 90 958 0059</a>
 
                 <h5 class="footer-contact__title">Email</h5>
                 <a href="#" class="footer-contact__link">info@gmail.com</a>

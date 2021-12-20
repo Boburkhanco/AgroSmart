@@ -69,6 +69,30 @@
     font-family: Ruberoid;
 }
 
+.value-after{
+    width: 60px;
+    height: 30px;
+    color: #084A4F;
+    opacity: .45;
+    padding-right: 20px;
+    margin-top: 12px;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 170px;
+}
+.value-afterr{
+    width: 60px;
+    height: 30px;
+    color: #084A4F;
+    opacity: .45;
+    padding-right: 20px;
+    margin-top: 12px;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 185px;
+}
+
+
 // Rasm Yuklash 
 
 .image-uploading {
@@ -147,10 +171,16 @@
     color: white;
     font-size: 14px;
     line-height: 20px;
-    margin-top: 10px;
     margin-right: 10px;
+    position: relative;
+    top: 20px;
+}
+.send-btn__link{
+    text-decoration: none;
     align-self: flex-end;
-
+}
+.elon-footer{
+    margin-top: 60px;
 }
 .send-btn:hover{
     cursor: pointer;
@@ -250,15 +280,23 @@
     .confirm-btn, .confirm-input{
         width: 60%;
     }
-}
-
-/* Mobile */
-@media only screen and (max-width: 600px) {
+    .send-btn{
+        width: 96%;
+        margin: 0 auto;
+    }
     .elon-cat, .elon-reg, .elon-dis, .elon-user, .user-cat, .user-name, .elon-number, .user-num, .elon-cost, .user-cost, .elon-comment {
         display: flex;
         flex-direction: column;
         width: 300px;
     }
+    .send-btn__link{
+        white-space: nowrap;
+        min-width: 100%;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
     .uploader{
         height: 180px;
     }
@@ -273,4 +311,17 @@
     .confirm-btn, .confirm-input{
         width: 75%;
     }   
+    .value-after{
+        margin-left: 240px;
+    }
+    .value-afterr{
+        margin-left: 255px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 376px) {
+    .upload{
+        min-width: 296px;
+        margin: 0 auto;
+    }
 }

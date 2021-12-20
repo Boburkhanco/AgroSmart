@@ -195,11 +195,11 @@ products.forEach(i => {
     locName.textContent = i.location
 
 
+    ITEMLINK.appendChild(DIV)
     DIV.append(IMG, DIV2)
-    ITEMLINK.appendChild(TITLE)
-    DIV2.append(BTN, ITEMLINK, COST, LINK)
+    DIV2.append(BTN, TITLE, COST, LINK)
     LINK.append(locName)
 
-    productPageProducts.appendChild(DIV)
+    productPageProducts.appendChild(ITEMLINK)
   })
   
