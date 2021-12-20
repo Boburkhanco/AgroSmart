@@ -239,7 +239,6 @@ products.forEach(i => {
       DIV2.append(TITLE, ELONBTN, DIV3)
       DIV3.appendChild(TEXT)
 
-    //   thisHero.prepend(DIV2)
       thisCarousel.appendChild(DIV)
   })
 

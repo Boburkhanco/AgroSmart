@@ -23,7 +23,6 @@
     padding-bottom: 20px;
 }
 .products-item {
-    width: 28%;
     min-width: 320px;
     border: 1px solid #0D515C;
     border-radius: 4px;
@@ -99,7 +98,6 @@
     font-size: 13px;
     line-height: 14px;
     text-align: center;
-    // opacity: .45;
     display: flex;
     height: 15px;
     padding-top: 3px;
@@ -149,11 +147,11 @@
         font-size: 28px;
         line-height: 35px;
     }
-    .products-item{
-        min-width: 340px;
-    }
     .products-more{
         max-width: 340px;
+    }
+    .products-item{
+        min-width: 330px;
     }
 }
 
