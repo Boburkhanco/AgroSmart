@@ -23,7 +23,7 @@
     padding-bottom: 20px;
 }
 .products-item {
-    min-width: 340px;
+    min-width: 350px;
     border: 1px solid #0D515C;
     border-radius: 4px;
     padding: 8px;
@@ -151,7 +151,7 @@
         max-width: 340px;
     }
     .products-item{
-        min-width: 340px;
+        min-width: none;
     }
 }
 
@@ -188,8 +188,8 @@
     }
 }
 /* Mobile */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 340px) {
     .products-item{
-        min-width: 300px;
+        min-width: 310px;
     }
 }
