@@ -64,26 +64,12 @@
         <div class="sort-controls">
             <!-- Searching   -->
         <div class="searching">
-            <input class="search" type="text" placeholder="Нимани қидиряпсиз?">
+            <input class="search" id="searchInput" type="text" placeholder="Нимани қидиряпсиз?">
         </div>
         <!-- Sorting  -->
         <div class="sorting">
             <select class="form-select tanlov regions" id="regSort" aria-label="Region Options">
-                <option selected>Вилоятни танланг</option>
-                <option value="">Тошкент шаҳри</option> 
-                <option value="">Андижон вилояти</option> 
-                <option value="">Бухоро вилояти</option> 
-                <option value="">Фарғона вилояти</option> 
-                <option value="">Жиззах вилояти</option> 
-                <option value="">Хоразм вилояти</option> 
-                <option value="">Наманган вилояти</option> 
-                <option value="">Навоий вилояти</option> 
-                <option value="">Қашқадарё вилояти</option> 
-                <option value="">Қорақолпоғистон Республикаси</option> 
-                <option value="">Самарқанд вилояти</option> 
-                <option value="">Сирдарё вилояти</option> 
-                <option value="">Сурхандарё вилояти</option> 
-                <option value="">Тошкент вилояти</option>
+                <option selected value="All">Вилоятни танланг</option>
             </select>
             <select class="form-select tanlov district" id="disSort" aria-label="District Options">
                 <option selected>Туманни танланг</option>
@@ -103,7 +89,7 @@
                 <option value="">Шаҳрихон тумани</option>                    
                 <option value="">Улуғнор тумани</option> 
             </select>
-            <button class="btn-izlash">Излаш</button>
+            <button class="btn-izlash" id="submitBtn">Излаш</button>
         </div>
         </div>
 

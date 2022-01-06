@@ -11,6 +11,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Фаргона"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -24,6 +27,9 @@ products = [
         "summary": "Анор хакида кискача маълумот   Анор хакида кискача маълумот    Анор хакида кискача маълумот   Анор хакида кискача маълумот  Анор хакида кискача маълумотАнор хакида кискача маълумот   Анор хакида кискача маълумот    Анор хакида кискача маълумот   Анор хакида кискача маълумот  Анор хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Фаргона"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -37,6 +43,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Andijon"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -50,6 +59,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Фаргона"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -63,6 +75,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Andijon"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -76,6 +91,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Фаргона"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -89,6 +107,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Фаргона"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -101,7 +122,10 @@ products = [
         "cost": 15000,
         "summary": "Анор хакида кискача маълумот   Анор хакида кискача маълумот    Анор хакида кискача маълумот   Анор хакида кискача маълумот  Анор хакида кискача маълумотАнор хакида кискача маълумот   Анор хакида кискача маълумот    Анор хакида кискача маълумот   Анор хакида кискача маълумот  Анор хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
-        "location": "Фаргона вилояти Ўзбекистон тумани",
+        "location": "Бухоро вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Бухоро вилояти"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -115,6 +139,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Фаргона"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -128,6 +155,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Фаргона"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -141,6 +171,9 @@ products = [
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
         "location": "Фаргона вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Фаргона"
+        ],
         "value": " 12 tonna"
     },
     {
@@ -153,60 +186,80 @@ products = [
         "cost": 10000,
         "summary": "Олма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумотОлма хакида кискача маълумот   Олма хакида кискача маълумот    Олма хакида кискача маълумот   Олма хакида кискача маълумот  Олма хакида кискача маълумот",
         "locationUrl": "https://goo.gl/maps/xy789KXa2UysjaZS8",
-        "location": "Фаргона вилояти Ўзбекистон тумани",
+        "location": "Бухоро вилояти Ўзбекистон тумани",
+        "qayer": [
+            "Бухоро вилояти"
+        ],
         "value": " 12 tonna"
     }
 ]
+let viloyatlar = [
+    "Тошкент шаҳри",
+    "Андижон вилояти",
+    "Бухоро вилояти",
+    "Фаргона вилояти",
+    "Жиззах вилояти",
+    "Хоразм вилояти",
+    "Наманган вилояти",
+    "Навоий вилояти",
+    "Қашқадарё вилояти",
+    "Қорақолпоғистон Республикаси",
+    "Самарқанд вилояти",
+    "Сирдарё вилояти",
+    "Сурхандарё вилояти",
+    "Тошкент вилояти"
+  ];
+
+const productRender = (products) => {
+    productsUl.innerHTML = ''
+    products.forEach(i => {
+        let DIV = document.createElement('div')
+        DIV.setAttribute('class', 'products-item') 
+        
+        let IMG = document.createElement('div')
+        IMG.setAttribute('class', 'products-item__img')
+
+        let ITEMLINK = document.createElement('a')
+        ITEMLINK.setAttribute('class', 'products-item__link')
+        ITEMLINK.href = "product.html"
+
+        let DIV2 = document.createElement('div')
+        DIV2.setAttribute('class', 'products-item__inner')
+
+        let BTN = document.createElement('button')
+        BTN.setAttribute('class','products-item__inner-btn')
+        BTN.textContent = i.cost
+
+        let TITLE = document.createElement('h4')
+        TITLE.setAttribute('class', 'products-item__inner-title')
+        TITLE.textContent = i.title
+        
+        let COST = document.createElement('h5')
+        COST.setAttribute('class', 'products-item__inner-cost')
+        COST.textContent = i.value
+
+        let LINK = document.createElement('a')
+        LINK.setAttribute('class', 'products-item__inner-link')
+        LINK.href = i.locationUrl
+
+        let IMG2 = document.createElement('img')
+        IMG2.setAttribute('class','location-logo')
+
+        let locName = document.createElement('p')
+        locName.setAttribute('class','location-name')
+        locName.textContent = i.location
 
 
+        ITEMLINK.appendChild(DIV)
+        DIV.append(IMG, DIV2)
+        DIV2.append(BTN, TITLE, COST, LINK)
+        LINK.append(locName)
 
-products.forEach(i => {
-    let DIV = document.createElement('div')
-    DIV.setAttribute('class', 'products-item') 
-    
-    let IMG = document.createElement('div')
-    IMG.setAttribute('class', 'products-item__img')
+        productsUl.appendChild(ITEMLINK)
+    })
+}
+productRender(products)  
 
-    let ITEMLINK = document.createElement('a')
-    ITEMLINK.setAttribute('class', 'products-item__link')
-    ITEMLINK.href = "product.html"
-
-    let DIV2 = document.createElement('div')
-    DIV2.setAttribute('class', 'products-item__inner')
-
-    let BTN = document.createElement('button')
-    BTN.setAttribute('class','products-item__inner-btn')
-    BTN.textContent = i.cost
-
-    let TITLE = document.createElement('h4')
-    TITLE.setAttribute('class', 'products-item__inner-title')
-    TITLE.textContent = i.title
-    
-    let COST = document.createElement('h5')
-    COST.setAttribute('class', 'products-item__inner-cost')
-    COST.textContent = i.value
-
-    let LINK = document.createElement('a')
-    LINK.setAttribute('class', 'products-item__inner-link')
-    LINK.href = i.locationUrl
-
-    let IMG2 = document.createElement('img')
-    IMG2.setAttribute('class','location-logo')
-
-    let locName = document.createElement('p')
-    locName.setAttribute('class','location-name')
-    locName.textContent = i.location
-
-
-    ITEMLINK.appendChild(DIV)
-    DIV.append(IMG, DIV2)
-    DIV2.append(BTN, TITLE, COST, LINK)
-    LINK.append(locName)
-
-    productsUl.appendChild(ITEMLINK)
-  })
-  
-  
   products.forEach(item => {
       let DIV = document.createElement('div')
       DIV.setAttribute('class', 'carousel-item')
@@ -266,3 +319,34 @@ products.forEach(i => {
       } 
     }, 12000);
   }
+
+
+
+viloyatlar.forEach(i => {
+  let OPTION = document.createElement('option')
+  OPTION.setAttribute('value', i)
+  OPTION.textContent = i
+
+  regSort.appendChild(OPTION)
+})
+
+submitBtn.addEventListener('click', e => {
+    e.preventDefault()
+      let regex = new RegExp(searchInput.value , 'gi')
+      let filteredProducts = products
+
+      //sort by title
+      if (searchInput.value.length > 3) {
+        filteredProducts = products.filter(item => String(item.title).match(regex))
+      }
+
+      //sort by category
+      if (regSort.value){
+        if (regSort.value !== 'All') {
+          filteredProducts = filteredProducts.filter(item => item.qayer.includes(regSort.value))
+        }
+      }
+
+    productRender(filteredProducts)
+    // searchResults.textContent = "Search results:" + " " + filteredProducts.length + " " + "similar Products"
+})

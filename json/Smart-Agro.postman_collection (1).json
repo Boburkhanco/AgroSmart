@@ -1,0 +1,1755 @@
+{
+	"info": {
+		"_postman_id": "d8025e76-d682-4602-8ed2-6c6f90a65322",
+		"name": "Smart-Agro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"admin\",\r\n    \"password\": 123456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authUser",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyMTozNi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyMTozNi4wMDBaIn0sImlhdCI6MTYyNDM5MzI5OH0.9XKGbufhhVl9E_yuGGwvqYByk5_8MDJVrN3nzEvJe3Y",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "getUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/user?limit=2&offset=0",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createUser",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"test\",\r\n    \"password\": 123456\r\n}"
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/user",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"userName\": \"test1\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzY1N30.hLLSCylBrYWAxn-Nq7qFg1jB3nqUvO6b2E8RcLKt2yY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "getCategories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/category?limit=2&offset=0",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"category"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCategory",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mevalar\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCategory",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Poliz ekinlari\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategoryById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzY1N30.hLLSCylBrYWAxn-Nq7qFg1jB3nqUvO6b2E8RcLKt2yY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCategory",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "statistic",
+			"item": [
+				{
+					"name": "getStatistics",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/statistic",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"statistic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createStatistic",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Olma\",\r\n    \"price\": 5400\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/statistic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"statistic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStatistic",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Nok\",\r\n    \"price\": 6000\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/statistic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"statistic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStatisticById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzY1N30.hLLSCylBrYWAxn-Nq7qFg1jB3nqUvO6b2E8RcLKt2yY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/statistic/1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"statistic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteStatistic",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/statistic/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"statistic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "region",
+			"item": [
+				{
+					"name": "getRegions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/region?limit=10&offset=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"region"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createRegion",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Buxoro\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/region",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"region"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateRegion",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Toshkent\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/region",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"region"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRegionById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzY1N30.hLLSCylBrYWAxn-Nq7qFg1jB3nqUvO6b2E8RcLKt2yY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/region/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"region",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRegion",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/region/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"region",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "district",
+			"item": [
+				{
+					"name": "getDistricts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/district?limit=10&offset=0",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"district"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createDistrict",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNDoyNC4wMDBaIn0sImlhdCI6MTYyNDM5MzQ3NX0.rxujYAlWKTkF_oRDFLK7tWnq-QTcRUDu-vefvrg57Jw",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Olmaliq\",\r\n    \"regionId\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/district",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDistrict",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Beshariq\",\r\n    \"regionId\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/district",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDistrictById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzY1N30.hLLSCylBrYWAxn-Nq7qFg1jB3nqUvO6b2E8RcLKt2yY",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/district/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"district",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDistrict",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMDoyNzowMS4wMDBaIn0sImlhdCI6MTYyNDM5MzcyM30.njGH2c7fji_3dlIBkTx_zGUcaLe95I13MisOi7rA94Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/district/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"district",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "getPosts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiZmlyc3ROYW1lIjpudWxsLCJsYXN0TmFtZSI6bnVsbCwiYXZhdGFyIjpudWxsLCJwYXNzd29yZCI6IiQyYSQxMiRXanRjdVEwMEEuMTVVRU8vdTFIRmx1OG13Q2pqb2VZL3hGc2t1Z3daNXk3L20xb292RnU2SyIsInJvbGUiOjEsImNyZWF0ZWRBdCI6IjIwMjEtMDMtMzBUMTc6MTQ6MjQuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDMtMzBUMTc6MTQ6MjQuMDAwWiJ9LCJpYXQiOjE2MTcxMjQ0NzB9.nELpX7srNzYSl8xMj9DSX2_UEsJjtMkrxvfytIL89Xs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/post",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "ol",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPostById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiZmlyc3ROYW1lIjpudWxsLCJsYXN0TmFtZSI6bnVsbCwiYXZhdGFyIjpudWxsLCJwYXNzd29yZCI6IiQyYSQxMiRXanRjdVEwMEEuMTVVRU8vdTFIRmx1OG13Q2pqb2VZL3hGc2t1Z3daNXk3L20xb292RnU2SyIsInJvbGUiOjEsImNyZWF0ZWRBdCI6IjIwMjEtMDMtMzBUMTc6MTQ6MjQuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDMtMzBUMTc6MTQ6MjQuMDAwWiJ9LCJpYXQiOjE2MTcxMjQ0NzB9.nELpX7srNzYSl8xMj9DSX2_UEsJjtMkrxvfytIL89Xs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/post/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePost",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMTozMTozMC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMTozMTozMC4wMDBaIn0sImlhdCI6MTYyNDM5Nzc3Mn0.VL03SUJo8WTSPA-c0PZ0yXBw_eRV3rEoEw1b7MsyPTg",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/post/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPost",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMToyNzowMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMToyNzowMi4wMDBaIn0sImlhdCI6MTYyNDM5NzMwN30.hWbaXxMD2O2dkPd4LWrRHPi54hT3dvLhr4Imd4G5Y-Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Chotkiy shirin olma",
+									"type": "text"
+								},
+								{
+									"key": "districtId",
+									"value": "13",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/tolip/Pictures/kartoshka.jpg"
+								},
+								{
+									"key": "phone",
+									"value": "+998 97 777-55-44",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "15700",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/post",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePost",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMToyNzowMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMToyNzowMi4wMDBaIn0sImlhdCI6MTYyNDM5NzMwN30.hWbaXxMD2O2dkPd4LWrRHPi54hT3dvLhr4Imd4G5Y-Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Shirin sariq kartoshka",
+									"type": "text"
+								},
+								{
+									"key": "districtId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/tolip/Pictures/kartoshka.jpg"
+								},
+								{
+									"key": "phone",
+									"value": "+998 97 777-55-44",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "14500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "front",
+			"item": [
+				{
+					"name": "createPost",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMToyNzowMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMToyNzowMi4wMDBaIn0sImlhdCI6MTYyNDM5NzMwN30.hWbaXxMD2O2dkPd4LWrRHPi54hT3dvLhr4Imd4G5Y-Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test olma",
+									"type": "text"
+								},
+								{
+									"key": "districtId",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/tolip/Pictures/olma.jpg"
+								},
+								{
+									"key": "phone",
+									"value": "+998 91 201-05-46",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "15700",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/create-post",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"create-post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "otpVerification",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0yMlQyMToyNzowMi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0wNi0yMlQyMToyNzowMi4wMDBaIn0sImlhdCI6MTYyNDM5NzMwN30.hWbaXxMD2O2dkPd4LWrRHPi54hT3dvLhr4Imd4G5Y-Q",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"otp\": 13458,\r\n    \"requestId\": 562959164\r\n}"
+						},
+						"url": {
+							"raw": "https://api.agro-smart.uz/otp-verification",
+							"protocol": "https",
+							"host": [
+								"api",
+								"agro-smart",
+								"uz"
+							],
+							"path": [
+								"otp-verification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

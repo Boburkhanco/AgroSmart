@@ -69,28 +69,6 @@
     font-family: Ruberoid;
 }
 
-.value-after{
-    width: 60px;
-    height: 30px;
-    color: #084A4F;
-    opacity: .45;
-    padding-right: 20px;
-    margin-top: 12px;
-    position: absolute;
-    margin-top: 58px;
-    margin-left: 170px;
-}
-.value-afterr{
-    width: 60px;
-    height: 30px;
-    color: #084A4F;
-    opacity: .45;
-    padding-right: 20px;
-    margin-top: 12px;
-    position: absolute;
-    margin-top: 58px;
-    margin-left: 185px;
-}
 
 
 // Rasm Yuklash 
@@ -184,6 +162,19 @@
 .send-btn:hover{
     cursor: pointer;
     background-color: #063c44;
+}
+.select-input{
+    display: flex;
+    align-items: center;
+}
+.cost-select, .value-select{
+    height: 40px;
+    margin-left: 3px;
+    border: 1px solid rgba(13,81,92,0.25);
+    border-radius: 4px;
+    background-color: transparent;
+
+
 }
 
 /*Tasdiqlash Page*/
@@ -310,12 +301,6 @@
     .confirm-btn, .confirm-input{
         width: 75%;
     }   
-    .value-after{
-        margin-left: 240px;
-    }
-    .value-afterr{
-        margin-left: 255px;
-    }
 }
 /* Mobile */
 @media only screen and (max-width: 376px) {
